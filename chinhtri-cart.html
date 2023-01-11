@@ -101,72 +101,43 @@
         </div>
     </div> <!-- End mainmenu area -->
     
-    <div class="single-product-area">
-        <div class="zigzag-bottom"></div>
+    <div class="product-big-title-area">
         <div class="container">
             <div class="row">
-                <div class="col-md-4"> 
-                   <div class="single-sidebar">
-                       <h2 class="sidebar-title">Sản phẩm nổi bật</h2>
-                        <div class="thubmnail-recent">
-                            <img src="img/product-2.jpg" class="recent-thumb" alt="">
-                            <h2><a href="naoko.html">Bí mật của Naoko - Higashino Keigo</a></h2>
-                            <div class="product-sidebar-price">
-                                <ins>78.000đ</ins> <del>108.000đ</del>
-                            </div>                             
-                        </div>
-                        <div class="thubmnail-recent">
-                            <img src="img/triethoc.jpg" class="recent-thumb" alt="">
-                            <h2><a href="triethoc.html">Giáo Trình Triết Học Mác – Lênin</a></h2>
-                            <div class="product-sidebar-price">
-                                <ins>89.000đ</ins>
-                            </div>                             
-                        </div>
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Giỏ hàng</h2>
                     </div>
                 </div>
-                
-                <div class="col-md-8">
-                    <div class="product-content-right">
-                        <div class="woocommerce">
-                            <form method="post" action="#">
-                                <table cellspacing="0" class="shop_table cart">
-                                    <thead>
-                                        <tr>
-                                            <th class="product-thumbnail">&nbsp;</th>
-                                            <th class="product-name">Sản phẩm</th>
-                                            <th class="product-price">Giá tiền</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="cart_item">
-                                            <td class="product-thumbnail">
-                                                <a><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/chinhtri.jpg"></a>
-                                            </td>
-
-                                            <td class="product-name">
-                                                <a>Giáo Trình Kinh Tế Chính Trị Mác – Lênin</a> 
-                                            </td>
-
-                                            <td class="product-price">
-                                                <span class="amount">56.000đ</span> 
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="actions" colspan="6">
-                                                <div class="coupon">
-                                                    <label for="coupon_code">Mã giảm giá:</label>
-                                                    <input type="text" placeholder="nhập mã" value="" id="coupon_code" class="input-text" name="coupon_code">
-                                                    <input type="submit" value="Dùng mã" name="apply_coupon" class="button">
-                                                </div>
-                                                <input type="submit" value="Mua" name="proceed" class="checkout-button button alt wc-forward">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                        </div>                        
-                    </div>                    
-                </div>
+            </div>
+        </div>
+    </div>
+    
+                <section class="container content-section">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Sản phẩm</span>
+                        <span class="cart-price cart-header cart-column">Giá tiền</span>
+                        <span class="cart-quantity cart-header cart-column">Số lượng</span>
+                    </div>
+                    <div class="cart-items">
+                        <div class="cart-row">
+                            <div class="cart-item cart-column">
+                                <img class="cart-item-image" src="img/chinhtri.jpg" width="100" height="100">
+                                <span class="cart-item-title">Giáo Trình Kinh Tế Chính Trị Mác – Lênin</span>
+                            </div>
+                            <span class="cart-price cart-column">56.000đ</span>
+                            <div class="cart-quantity cart-column">
+                                <input class="cart-quantity-input" type="number" value="1">
+                                <button class="btn btn-danger" type="button">Xóa</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Tổng</strong>
+                        <span class="cart-total-price">56.000đ</span>
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button">Mua</button>
+                </section>                
             </div>
         </div>
     </div>
@@ -227,5 +198,6 @@
     
     <!-- Main Script -->
     <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>
